@@ -59,7 +59,7 @@ header{
 	font-weight: 100;
 }
 
-.main-nav li a:after{
+.main-nav li a:hover{
 	border-bottom: 2px solid #bf55ec;
 }
 
