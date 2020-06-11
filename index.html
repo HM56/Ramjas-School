@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header>
@@ -12,12 +13,13 @@
 				<div class="row clearfix">
 					<img src="images/logo.png" class="logo">
 
-					<ul class="main-nav">
+					<ul class="main-nav" id="check">
 						<li><a href="#">ABOUT US</a></li>
 						<li><a href="#">ADMISSION</a></li>
 						<li><a href="#">ABOUT US</a></li>
 						<li><a href="#">ABOUT US</a></li>
 					</ul>
+					<a href="#" class="overlay-icon" onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
 				</div>
 			</nav>
 
@@ -29,4 +31,18 @@
 			</div>
 		</header>
 	</body>
+
+	<script type="text/javascript">
+		
+		function slideshow(){
+			var x = document.getElementbyId('check');
+			if(x.style.display === "none"){
+				x.style.display="block";
+			}else{
+				x.style.display="none";
+			}
+		}
+
+	</script>
+
 </html>
