@@ -51,6 +51,7 @@ header{
 }
 
 .main-nav li a{
+	padding: 5px 0;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -58,10 +59,14 @@ header{
 	font-weight: 100;
 }
 
+.main-nav li a:after{
+	border-bottom: 2px solid #bf55ec;
+}
+
 .top-content{
 	width: 1180px;
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -72,6 +77,8 @@ h1{
 	word-spacing: 5px;
 	margin-bottom: 20px;
 	text-transform: uppercase;
+	font-weight: lighter;
+
 }
 
 .btn{
@@ -91,8 +98,16 @@ h1{
 	border: 1px solid #bf55ec;
 }
 
+.btn-aboutus:hover{
+	background-color: #fff;
+}
+
 .btn-admission{
 	background-color: transparent;
 	color: #fff;
 	border: 1px solid #fff;
+}
+
+.btn-admission:hover{
+	background-color: #bf55ec;
 }
